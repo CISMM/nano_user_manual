@@ -25,7 +25,9 @@ square grid. Several formats are understood by
 the NanoManipulator:</p>
 <!--mstheme--></font><!--msthemelist--><table border="0" cellpadding="0" cellspacing="0" width="100%">
   <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">ThermoMicroscopes - from the SPMlab software, both version 4 and 5.<!--mstheme--></font><!--msthemelist--></td></tr>
-  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">PPM- a standard image file, &quot;Portable Pixel Map&quot;, where the data values are represented by
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">NanoScope files from Digital Instruments - version 4.0 through 4.4 (see
+    note below)<!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">Standard image formats - JPG, TIFF, BMP, PPM (Portable Pixel Map), PGM, where the data values are represented by
     shades of gray.<!--mstheme--></font><!--msthemelist--></td></tr>
   <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">Text - This format includes a short header specifying the dimensions of
     the grid and then contains a list of data values in text format.<!--mstheme--></font><!--msthemelist--></td></tr>
@@ -33,20 +35,29 @@ the NanoManipulator:</p>
   <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">UNCA Image - an image format for use with UNC-CH's freely available /usr/Img
     package for unix platforms.<!--mstheme--></font><!--msthemelist--></td></tr>
 <!--msthemelist--></table><!--mstheme--><font face="Times New Roman">
-<p>The file extension is ignored - the NanoManipulator attempts to determine
+<p>Except for standard image formats, the file extension is ignored - the NanoManipulator attempts to determine
 what format the file is by the first few lines of information contained in the
 file. </p>
-<p>There are some restrictions on which static data files can be opened at any
-one time. If you have already opened a static data file, a stream file or an SPM
+<h3><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339966">NanoScope files <!--mstheme--></font></h3>
+<p>The NanoManipulator will read height data from version 4.0 through 4.2
+correctly. Other types of data, like frequency, potential, current, amplitude or
+phase, may be read successfully, but will be scaled incorrectly, i.e., the z
+data and units have an arbitrary scale applied to them. Version 4.3 files and
+higher should have correctly scaled values.&nbsp; </p>
+<h2><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339999">Data Handling<!--mstheme--></font></h2>
+<p>One capability of the NanoManipulator is to overlay scan datasets. One can be
+displayed as the height plane, and another as a color map, and another as
+contour lines. If these layers were not collected at the same time or with the
+same instrument, however, they may not be <b>aligned</b>, that is, the features
+they portray may not be in the same location in each image.&nbsp; </p>
+<p>If you have already opened a static data file, a stream file or an SPM
 connection, the new static data file which you open must be of the same grid
-size and be collected over the same region as the currently open data. This
+size and be collected over the same region as the currently open data, or it
+must be aligned. This
 allows you to open SPMLab files which contain data collected at the same time,
 like topography and lateral force, or files from two successive scans of the
-same region. You cannot open SPMLab files at the same time if they are of
-different regions - this prevents misinterpretation of the data, because the
-NanoManipulator only maintains one scan region, so the second data file would be
-scaled incorrectly. If you need to open this second data file, choose <b>File ..
-<a href="close.htm">Close</a></b> first. </p>
+same region. If you open SPMLab files with different regions at the same time, the second file must be aligned with the first using the <a href="../analysis_menu/data_registration.htm">Data Registration</a>
+tool. </p>
 &nbsp;<!--mstheme--></font><!--msnavigation--></td></tr><!--msnavigation--></table></body>
 
 </html>
