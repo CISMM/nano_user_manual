@@ -73,7 +73,7 @@ visible between the hand icon and the surface.&nbsp;</p>
 <p>See <a href="screen_elements.htm#Perspective">Perspective</a> for an
 explanation of why the measure lines and the aim line don't always look
 parallel.</p>
-<h2><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339999"><a name="Grab">Grab</a><!--mstheme--></font></h2>
+<h2><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339999"><a name="Grab">Grab</a>/Scale<!--mstheme--></font></h2>
 <p align="left">You
 can use the Phantom to grab the surface and move it around, so that features
 are more easily visible. For this
@@ -127,28 +127,24 @@ light.<span style="mso-spacerun: yes">&nbsp;</span></span>
 <h2><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339999">Measure<!--mstheme--></font></h2>
 <p align="left"><img border="0" src="images/measure_hand.jpg" width="160" height="160">This tool allows you to use the red, yellow and blue lines on the surface to
 make quick measurements of surface features. It is explained in the section <a href="analysis_menu/measure_lines.htm">Measure Lines</a>.</p>
-<h2><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339999"><a name="Scale Up and Down">Scale Up and Down</a><!--mstheme--></font></h2>
+<h2><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339999"><a name="Scale">Scale</a><!--mstheme--></font></h2>
 <p>The Phantom can be used to scale images up and down.<span style="mso-spacerun: yes">&nbsp;
 </span>This can be useful when you would like to see “the bigger picture,”
 or when you want to focus in on a particular detail.<span style="mso-spacerun: yes">&nbsp;
-</span>Scaling can be performed when the NanoManipulator is in either Scale Up
-or Scale Down mode.<span style="mso-spacerun: yes">&nbsp; </span>(Scaling up is
-zooming in, and scaling down is zooming out.)<span style="mso-spacerun: yes">&nbsp;
-</span>To choose one of these modes, click on <b style="mso-bidi-font-weight:
-normal">Scale Up</b> or <b style="mso-bidi-font-weight:
-normal">Scale Down</b> in the main control window.<span style="mso-spacerun:
+</span>Click on <b style="mso-bidi-font-weight:
+normal">Scale </b> in the main control window.<span style="mso-spacerun:
 yes">&nbsp;&nbsp;</span></p>
-<p><img border="0" src="images/scale_up_hand.jpg" align="left" width="160" height="160"><img border="0" src="images/scale_down_hand.jpg" align="left" width="181" height="160">The pointer in <b style="mso-bidi-font-weight:
-normal">Scale Up </b>mode looks like a pair of two green arrows, with their
+<p><img border="0" src="images/scale_up_hand.jpg" align="left" width="160" height="160">The pointer in <b style="mso-bidi-font-weight:
+normal">Scale </b>mode looks like a pair of two green arrows, with their
 tails back-to-back.<span style="mso-spacerun: yes">&nbsp; </span>If at first you
 don’t see a pair of arrows, try moving the Phantom stylus around.<span style="mso-spacerun: yes">&nbsp;
-</span>The arrows may be off screen, or hidden by the image plane. <span style="font-size: 12.0pt; mso-bidi-font-size: 10.0pt; mso-fareast-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">Scale
-down mode’s pointer looks like a pair of two red arrows, with their heads
-back-to-back.<span style="mso-spacerun: yes">&nbsp;</span></span></p>
+</span>The arrows may be off screen, or hidden by the image plane.&nbsp;</p>
 <p>Put the intersection of the green aim line with the surface at the point on which you wish to
 zoom in or out.<span style="mso-spacerun: yes">&nbsp; </span>Press the stylus
-button, and continue to hold it down until you have scaled up or down as much as
-you desire.</p>
+button, and then move the pen towards yourself to scale up (pull the object
+towards you). To scale down, push the pen towards the Phantom body (push the
+object away from you). An extreme change in scale may require you to pull or
+push twice.&nbsp;</p>
 <h2><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339999"><a name="Touch Stored">Touch Stored</a><!--mstheme--></font></h2>
 <p class="MsoBodyText">In touch stored mode, you can use the Phantom to feel
 items within the on-screen image.<span style="mso-spacerun: yes">&nbsp; </span>To
@@ -177,6 +173,30 @@ the SPM tip directly.</span></p>
 red ball at the blue cone's tip is automatically sized to represent a 12.5 nm
 sphere. It is there to provide some idea of the size of a sharp AFM tip. The <a href="setup_menu/display_settings.htm">Display Settings</a>
 dialog allows you to change the size of this sphere, if desired.&nbsp;</span></p>
+<h2><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339999"><a name="Region">Region</a><!--mstheme--></font></h2>
+<p>In region mode, you can select a part of the surface to focus on and see in
+complete detail, while blurring areas outside that area to make it easier for
+the computer to draw. This allows you to collect high resolution data (500x500
+or 1000x1000), and still maintain interactive speeds while using the
+Phantom.&nbsp;</p>
+<p>Region mode's pointer looks like a blue arrow. Put the intersection of the green aim line with the surface at the point on which you wish to
+focus. Press and hold the stylus button, and drag a rectangular area around the
+central point. A box indicates where the current region is located, and areas
+outside this region become blurry. Release the stylus button.&nbsp;</p>
+<p>Now that the region is placed, its size can be adjusted by dragging the edges
+of the region. When the green aim line is near enough to an edge to drag it,
+that edge will &quot;highlight&quot; by becoming more transparent. There is a
+box in the center of the region, too - if the green aim line is inside it, it
+become more transparent, and you can press the Phantom button to translate and
+rotate the region. If you click away from an edge and away from the central box,
+a new region will be created.&nbsp;</p>
+<p>Note that if you switch to other Phantom modes, like touch or grab, the
+region will remain active, allowing you to do modifications on a detailed region
+of a high resolution scan at interactive rates. You can switch back to the
+region tool to adjust the position of the region at any time.&nbsp;</p>
+<p>To delete the region so the entire surface is displayed in full detail,
+either translate the region entirely off the surface, or click with the aim line
+entirely off the surface.&nbsp;</p>
 <h2><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339999"><a name="Touch">Touch</a><!--mstheme--></font></h2>
 <p>This mode is only available when the NanoManipulator is connected to a
 &quot;live&quot; SPM - you must have connected to your ThermoMicroscopes SPM. </p>

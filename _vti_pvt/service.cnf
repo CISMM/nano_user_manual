@@ -1,6 +1,7 @@
 vti_encoding:SR|utf8-nl
 vti_featurelist:VX|vti_ACAll vti_ServiceMarkUrlDirBrowse vti_ServiceMarkUrlDirExec vti_ServiceMarkUrlDirScript vti_ServerEmailTransport vti_ServerIndexServer vti_ServerASP
 vti_dependenciesood:IR|1
+vti_structto_localhost\\e\:\\nsrc\\unc\\install_template\\user_manual/e\:/nsrc/unc/install_template/user_manual:TR|12 Feb 2002 16:01:14 -0000
 vti_webservertype:SR|diskweb
 vti_categories:VR|Travel Expense\\ Report Business Competition Goals/Objectives Ideas Miscellaneous Waiting VIP In\\ Process Planning Schedule
 vti_navbuttonnextlabel:SR|Next
@@ -17,7 +18,7 @@ vti_oldestcompatibleversion:SR|2.0.0.0
 vti_restartmanual:IX|0
 vti_defaultcharset:SR|windows-1252
 vti_defaultlanguage:SR|en
-vti_structto_localhost\\e\:\\netc\\nano_install_template\\user_manual/e\:/netc/nano_install_template/user_manual:TR|20 Nov 2000 18:49:10 -0000
+vti_structto_localhost\\e\:\\netc\\nano_install_template\\user_manual/e\:/netc/nano_install_template/user_manual:TR|12 Feb 2002 16:01:14 -0000
 vti_publishmetainfokeys:VR|vti_assignedto vti_approvallevel vti_categories vti_description
 vti_autorecalc:IX|1
 vti_copytimestamp_file\:///E\:/netc/demo/user_manual/E\:/netc/demo/user_manual:TR|28 Sep 2000 21:36:18 -0000
@@ -31,9 +32,10 @@ vti_missingoverlays:VX|
 vti_missingoverlaylabels:VX|
 vti_copytimestamp_file\:///E\:/nsrc/nano/user_manual/E\:/nsrc/nano/user_manual:TR|04 Sep 2000 14:11:01 -0000
 vti_structto_localhost\\e\:\\netc\\demo\\user_manual/e\:/netc/demo/user_manual:TR|19 Sep 2000 19:59:50 -0000
-vti_copytimestamp_file\:///E\:/netc/nano_install_template/user_manual/E\:/netc/nano_install_template/user_manual:TR|16 Apr 2001 18:01:52 -0000
+vti_copytimestamp_file\:///E\:/netc/nano_install_template/user_manual/E\:/netc/nano_install_template/user_manual:TR|22 May 2002 18:33:52 -0000
 vti_casesensitiveurls:IX|0
 vti_textextensions:SX|.txt.
 vti_httpdversion:SX|FrontPage DBW
 vti_ignorekeyboard:IR|0
 vti_navbuttonuplabel:SR|Up
+vti_copytimestamp_file\:///E\:/nsrc/unc/install_template/user_manual/E\:/nsrc/unc/install_template/user_manual:TR|22 May 2002 18:34:45 -0000

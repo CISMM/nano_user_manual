@@ -1,5 +1,5 @@
 3.0.0.507
-1052
+1054
 1000,index.htm,0,NanoManipulator DP-100 User Manual,0,966864863,1
 vti_globalpage:BW|true
 1047,introduction.htm,0,Introduction,1000,971128884,0
@@ -36,6 +36,8 @@ vti_globalpage:BW|true
 1037,analysis_menu/calculate_data_planes.htm,0,Calculate Data Planes,1008,962561015,0
 1018,analysis_menu/rulergrid.htm,0,Rulergrid,1008,962202191,0
 1038,analysis_menu/measure_lines.htm,0,Measure Lines,1008,962561038,0
+1052,analysis_menu/data_registration.htm,0,Data Registration,1008,1001538709,0
+1053,analysis_menu/cross_section.htm,0,Cross Section,1008,1013529674,0
 1043,tools_menu/show_mode_buttons.htm,0,Show Mode Buttons,1009,969220178,0
 1020,tools_menu/phantom.htm,0,Phantom,1009,962203591,0
 1044,tools_menu/magellan.htm,0,Magellan,1009,969220185,0

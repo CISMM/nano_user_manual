@@ -1,0 +1,150 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Data Registration</title>
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta name="Microsoft Theme" content="user-man 010, default">
+<meta name="Microsoft Border" content="t, default">
+</head>
+
+<body bgcolor="#FFFFCC" text="#000000" link="#006600" vlink="#993333" alink="#CC6600"><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td><!--mstheme--><font face="Times New Roman">
+
+<p align="center"><font size="6"><strong><img src="_derived/data_registration.htm_cmp_user-man010_bnr.gif" width="600" height="60" border="0" alt="Data Registration"></strong></font><br>
+<nobr>[&nbsp;<a href="../index.htm">Home</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="analysis_menu.htm">Up</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="calculate_data_planes.htm">Calculate&nbsp;Data&nbsp;Planes</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="rulergrid.htm">Rulergrid</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="measure_lines.htm">Measure&nbsp;Lines</a>&nbsp;]</nobr> <nobr>[&nbsp;Data&nbsp;Registration&nbsp;]</nobr> <nobr>[&nbsp;<a href="cross_section.htm">Cross&nbsp;Section</a>&nbsp;]</nobr></p>
+<p align="center">&nbsp;</p>
+
+<!--mstheme--></font></td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><!--msnavigation--><td valign="top"><!--mstheme--><font face="Times New Roman">
+<p>The Data Registration tool allows you to align data or images obtained from
+different instruments. For instance, here are two images of a some metal
+patterns produced by lithography, one obtained with an AFM, and one obtained
+with an SEM:</p>
+<p><img border="0" src="../images/registration_reference.gif" width="308" height="327">&nbsp;
+<img border="0" src="../images/registration_adjustable.gif" width="308" height="327"></p>
+<p>They show the same features, but they are not exactly aligned - indeed this
+would be very difficult to accomplish manually. The Data Registration tool uses <b>correspondence
+points</b> to align the data in these two images.&nbsp;</p>
+<p>Here's the basic procedure:</p>
+<ol>
+  <li>Click to place a correspondence point. A marker icon appears in both image
+    windows.&nbsp;</li>
+  <li>Drag either marker icon, so that both icons lie over the same
+    feature.&nbsp;</li>
+  <li>Repeat until at least 3, but preferably 10 or more, points are
+    placed.&nbsp;</li>
+</ol>
+<p>Click the <b>Display in surface view</b> button to see the adjustable image
+displayed as a texture over the current height plane.&nbsp;</p>
+<p>Once the image is registered, type a name into the <b>Resample plane name</b>
+box to create a new plane of data that is aligned with the height plane, and can
+be used for color maps or contour lines.&nbsp;</p>
+<p><img border="0" src="../images/data_registration_controls.gif" width="385" height="623"></p>
+<p>The registration module is designed to take two images and return a
+transformation from one image to the other. I've labeled the two images as
+topography and projection image. The topography image may be thought of as
+a reference or source image for the transformation and the projection
+image is the test or target image. The transformation takes points in the
+reference image into points in the projection image. When you do something
+that tells the registration module to compute a transformation, that
+transformation gets sent to the graphics code and is used to set the
+transformation matrix for projective textures so that if you are
+displaying the reference image as the surface and you select the "Display
+Texture" checkbox in the registration window, it will overlay the
+projection image as a texture on top of the reference surface.
+<p>
+When you open up the registration control panel there should be two image
+windows that pop up in synchrony with the control panel (they go away when
+you close the control panel too). These windows let you specify a
+correspondence between points in the selected topography and projection
+images. To add a correspondence point, you click in either of the image
+windows with the right mouse button. Note that a corresponding point will
+automatically be placed in the other image at the same relative position
+in the image (if you place a point in the middle of one image the
+corresponding point will show up in the middle of the other image). A
+yellow square around a point indicates that it is selected and can be
+dragged or deleted. You can select a point by clicking near it with the
+left mouse button and you can drag it by holding down the left mouse
+button after clicking on it and moving the mouse.
+<p>
+It used to be that you had to press the "Register" button to tell the
+program to compute a new transformation from the current correspondence
+but now it does this automatically whenever you move one of the points so
+that the process can be more interactive.&nbsp;
+<p>
+For the future:<p>
+I'm working now on making the registration code use mutual information to
+compute the best transformation starting with the transformation set by
+the user. The interface for this will probably be a button that you press
+to let the program automatically adjust the current transformation to
+maximize mutual information.
+<p>
+I still need to add some code that runs the optimization on subsampled
+images before applying it to the original image so that the solution is
+stable (coarse to fine approach).
+
+</p>
+<p>
+&nbsp;
+
+</p>
+<p>I think that would be great to rework the UI. Some of controls I have in
+there are so non-intuitive that I don't even remember exactly what some of
+them do even though I wrote them (I'm especially uncertain about how they&nbsp;
+work in combination). Most of them have to do with creating
+the resampled image. Here is what they do I think:
+<p>
+checkbox for "Topography Region Only": This makes it so that the resampled
+image is only for the parts of the image that fall inside the topography
+image (the resulting image would be the same region in the world as the
+topography image)
+If this isn't checked, the code tries to compute how large an image is
+required to contain the warped image (I'm not sure how the specified
+resolution gets used here but I believe this refers only to the resolution
+of the topography region so the full resolution of the image could be
+really big if you had scaled up the projection image really big compared
+with the topography image) - there ought to be some error generated if the
+user has set a transformation that makes this image too big but there
+isn't.
+<p>
+checkbox for "Resample Warped Topography (instead of Projection)": This
+computes the inverse of the transformation and applies the inverse
+transformation to the topography image to create an image with the same
+world region as the projection image (and resample image axes are aligned
+with the projection image axes).&nbsp;
+If this isn't checked then the resulting
+image is in the space of the topography image (image axes are aligned with
+the topography image axes).
+<p>
+slider for "Resample Mixing Ratio": This is the one I'm really not sure
+about. When you create a resample image, it can actually be a
+combination of the intensities from the two original images. This
+control affects how much of each image gets put in the result. Its sort of
+or maybe exactly like what you can do with alpha-blending although I could
+imagine doing something more general. It seems to work for what Phillip
+and Neal need for their lithography planning images. You should try
+picking a value in the middle to see whats going on when you play with the
+other controls.
+<p>
+One thing I don't like about the resampling is that it is really slow. Its
+nice to have this in software so we know exactly what kind of filtering is
+going on. Also, its a simple way to get around any limitations on usage of
+texture memory that we might run into if this were done in hardware - I'm
+running into this problem when I try to display large textures in the
+seegerizer. I think this code could be optimized a lot.
+<p>
+Note that you can set the resolution of the resample image to something
+arbitrary at the bottom of the control panel.
+<p>
+As far as I know you can't do anything with the resampled image except
+save it or display it as a texture (if you select this as the projection
+image and set the transformation to the identity it should show up as
+aligned on the surface).
+<p>
+Something that ought to be added to the UI is some display of the
+transformation (in an intuitive form like how much rotation, shearing and
+scaling there is)
+<p>&nbsp;<!--mstheme--></font><!--msnavigation--></td></tr><!--msnavigation--></table></body>
+
+</html>
