@@ -1,0 +1,81 @@
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Stripchart</title><meta name="Microsoft Theme" content="user-man 010, default">
+<meta name="Microsoft Border" content="t, default">
+</head>
+
+<body bgcolor="#FFFFCC" text="#000000" link="#006600" vlink="#993333" alink="#CC6600"><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td><!--mstheme--><font face="Times New Roman">
+
+<p align="center"><font size="6"><strong><img src="_derived/stripchart.htm_cmp_user-man010_bnr.gif" width="600" height="60" border="0" alt="Stripchart"></strong></font><br>
+<nobr>[&nbsp;<a href="../index.htm">Home</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="tools_menu.htm">Up</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="show_mode_buttons.htm">Show&nbsp;Mode&nbsp;Buttons</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="phantom.htm">Phantom</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="magellan.htm">Magellan</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="navigate.htm">Navigate</a>&nbsp;]</nobr> <nobr>[&nbsp;Stripchart&nbsp;]</nobr> <nobr>[&nbsp;<a href="replay_control.htm">Replay&nbsp;Control</a>&nbsp;]</nobr></p>
+<p align="center">&nbsp;</p>
+
+<!--mstheme--></font></td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><!--msnavigation--><td valign="top"><!--mstheme--><font face="Times New Roman">
+<p>The Stripchart graphs data collected during a modification. It can display
+the data collected versus time or a spatial dimension, and allows you to easily
+change the range of the data collected. It will &quot;slide&quot; its view of
+the data so that the most recent data is always displayed. It is designed to
+provide instant feedback during and after a modification, so you can decide
+whether the modification went as planned. </p>
+<p>For more powerful graphing needs, the modification data can be exported using
+the <b>File .. <a href="../file_menu/save_mod_data.htm">Save Modification Data...</a>
+</b>command. </p>
+<p><a href="../images/stripchart.gif"><img border="2" src="../images/stripchart_small.gif" alt="stripchart.gif (8644 bytes)" width="640" height="249"></a> </p>
+<p>[Click to see a full-sized image]</p>
+
+<p>By default, the Stripchart shows both Topography and Lateral Force, displayed
+versus the arc-length of the modification so far. This window can be resized to
+make the graph bigger. To change these defaults,
+click the <b>Axis config</b> button. This dialog appears: </p>
+<p><a href="../images/stripchart_axis_config.gif"><img border="2" src="../images/stripchart_axis_config_small.gif" alt="stripchart_axis_config.gif (13222 bytes)" width="640" height="196"></a></p>
+<p>[Click to see a full-sized image]</p>
+
+<p>The first box in the <b>Axis config</b> dialog contains controls for the
+x-axis. You can choose to graph data versus time, arch length in nanometers, or
+the X or Y coordinate where the data was collected.</p>
+<p>The <b>Range</b> box controls how much data is visible on the X axis. If the
+X axis is set to <b>Time</b> and the <b>Range</b> box is 10, the Stripchart will
+display the most recent 10 seconds of data. If the X axis is set to <b>Arc
+length</b> and the <b>Range</b> box is set to 1000, the Stripchart will display
+data along the last 1000 nm of path the AFM tip has traveled. </p>
+<p>The <b>Max pts</b> box controls the maximum number of points per channel
+displayed in the Stripchart. We have found that the Stripchart can affect the
+interactivity of the NanoManipulator if it displays more than a few thousand
+points. If you are doing a modification using the <b>Freehand</b> tool, the <b>Constrained
+freehand </b>tool<b>,</b> or the <b>Slow line</b> tool, set the <b>Max pts</b>
+to be 1000 or less. Also, if you are replaying a stream file with several
+modifications at high speed, reduce the number of points to speed up replay and
+avoid large pauses. </p>
+<p>The <b>Use every nth pt</b> box allows you to skip some data points in order
+to display a greater range of data. Even though you can display only a few
+thousand points at interactive speeds while using certain tools, if you display every 10 or 20 data
+points, you can still watch the history of a long modification while it is
+happening. This control is particularly useful when using the <b>Sweep</b>
+style. Since the <b>sweep</b> style collects a data point at the left, center
+and right of the sweep width each time it steps forward, the Stripchart graph
+can become very confused. But if you display only every 3rd point, only one
+point per step is displayed, and the graph is much clearer. </p>
+<p>After the first modification takes place, controls are added for each kind of
+point data collected during the modification. It also adds controls for the
+Surface X Axis and Surface Y Axis, which allow you to graph the X or Y position
+of the tip during the modification.&nbsp; </p>
+<p>The <b>Active</b> toggle controls whether this type of data is graphed.
+Lateral Force and Topography are active by default.&nbsp;</p>
+<p>The <b>Invert</b> button flips the data. This is particularly useful for
+Lateral Force, which will sometimes be increasing in force as the signal,
+measured in nA, is going down.&nbsp;</p>
+<p>The <b>Use Y axis</b> button make this data set take over the Y axis. It's
+scale is displayed on the Y axis. </p>
+<p>The <b>Min </b>and <b>Max</b> boxes control the range displayed. If they are
+empty, the data will auto-scale so that the minimum and maximum values are just
+visible on the graph. If you type in a min (or max), the minimum (or maximum) data value displayed is
+locked to that value, no matter what range the actual data values are in. This
+can be helpful to cut off an outlying data value and look more closely at a
+particular data range.<!--mstheme--></font><!--msnavigation--></td></tr><!--msnavigation--></table></body>
+
+</html>

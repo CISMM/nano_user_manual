@@ -1,0 +1,175 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Introduction</title>
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta name="Microsoft Theme" content="user-man 010, default">
+<meta name="Microsoft Border" content="t, default">
+</head>
+
+<body bgcolor="#FFFFCC" text="#000000" link="#006600" vlink="#993333" alink="#CC6600"><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td><!--mstheme--><font face="Times New Roman">
+
+<p align="center"><font size="6"><strong><img src="_derived/introduction.htm_cmp_user-man010_bnr.gif" width="600" height="60" border="0" alt="Introduction"></strong></font><br>
+<nobr>[&nbsp;<a href="index.htm">Home</a>&nbsp;]</nobr> <nobr>[&nbsp;Introduction&nbsp;]</nobr> <nobr>[&nbsp;<a href="feature_list.html">Features</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="main_window.htm">Main&nbsp;Window</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="file_menu/file_menu.htm">File&nbsp;Menu</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="setup_menu/setup_menu.htm">Setup&nbsp;Menu</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="tip_control_menu/tip_control_menu.htm">Tip&nbsp;Control&nbsp;Menu</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="analysis_menu/analysis_menu.htm">Analysis&nbsp;Menu</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="tools_menu/tools_menu.htm">Tools&nbsp;Menu</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="screen_elements.htm">Surface&nbsp;View&nbsp;Window</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="phantom_modes.htm">Phantom&nbsp;Modes</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="magellan_controls.htm">Magellan&nbsp;Controls</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="widgets.htm">Widgets</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="tutorials.htm">Tutorials</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="troubleshooting.htm">Troubleshooting</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="nmviewer.htm">NMViewer</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="glossary.htm">Glossary</a>&nbsp;]</nobr></p>
+<p align="center">&nbsp;</p>
+
+<!--mstheme--></font></td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><!--msnavigation--><td valign="top"><!--mstheme--><font face="Times New Roman">
+<h2><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339999">An Introduction to the NanoManipulator<!--mstheme--></font></h2>
+<p>Quoted from the abstract of:</p>
+<p>Guthold, M., Falvo, M. R., Matthews, W. G., Paulson, S., Washburn, S., Erie,
+D., Superfine, R., Brooks, F. P. &amp; Taylor, R. M. (2000).&nbsp; Controlled
+Manipulation of Molecular Samples with the nanoManipulator. IEEE/ASME
+Transactions on Mechatronics. 5, 189-198. <a href="http://www.cs.unc.edu/~guthold/IEEE.pdf" eudora="autourl">http://www.cs.unc.edu/~guthold/IEEE.pdf<br>
+</a></p>
+<p>Making further advances in such diverse problems as building more powerful
+computers, measuring material properties of biological samples or exploring
+fundamental physical laws on the atomic level requires gaining access the to the
+nanoworld. The NanoManipulator system adds a virtual-reality interface to an
+atomic-force microscope (AFM), thus providing a tool that can be used by
+scientists to image <i>and</i> manipulate nanometer-sized molecular structures
+in a controlled manner. As the AFM tip scans the sample, the tip-sample
+interaction forces are monitored which, in turn, can yield information about the
+frictional, mechanical, material and topological properties of the sample.
+Computer graphics are used to reconstruct the surface for the user, with color
+or contours overlaid to indicate additional data sets. Moreover, a force
+feed-back stylus, which is connected to the tip via software, allows the user to
+directly interact with the macromolecules.</p>
+<!--msthemeseparator--><p align="center"><img src="_themes/user-man/bluhorsa.gif" width="600" height="10"></p>
+<p>[More detailed quotation from the paper body. Please download the paper for
+references.]</p>
+<p>II. THE NANOMANIPULATOR</p>
+<i>
+<p>A. AFM: Contact mode and tapping mode</p>
+</i>
+<p>The NanoManipulator system (Fig. 1) basically consists of three parts that
+are interconnected by software: an atomic force microscope (plus controller), a
+graphics engine/interface and a Phantom force stylus (plus controller).</p>
+<p>In an AFM, also known as a scanning force microscope (SFM), the sample is
+scanned by a very sharp tip, which is mounted on a flexible cantilever [24]. As
+the tip scans over the sample, the cantilever is deflected by the topographical
+features of the sample. These deflections are usually recorded by an optical
+lever system, converted back into topography by a computer and displayed on a
+screen. Atomic resolution has been obtained with this instrument [25], and
+samples can also be imaged in liquid [26-29]. The AFM may be operated in two
+distinct modes: <i>contact </i>mode or <i>tapping (intermittent contac</i>t)
+mode. </p>
+<p>When a sample is scanned in contact mode, the tip is continuously touching
+the sample, and, therefore, significant normal and lateral forces may be exerted
+on the sample. In contrast, when using tapping mode, the cantilever is
+oscillated perpendicular to the surface as it scans over the surface. Hence, the
+tip touches the sample only intermittently, and lateral forces are nearly
+eliminated.</p>
+<p>The NanoManipulator exploits this crucial difference between the two modes:
+Samples can be manipulated in contact mode with a controlled the normal force
+and they can be imaged before and after a manipulation in tapping mode without
+further modifying them. Depending on the cantilever, forces ranging from a few
+attoNewtons [30] to several tens of microNewtons can be measured - a range that
+is not accessible by any other single technique. Forces can be measured in the
+normal (z) and the lateral (x-y) direction.</p>
+<p><i>B. Graphics Interface and Phantom force stylus</p>
+<p>1) Interface and manipulations</p>
+</i>
+<p>The NanoManipulator is used in either the imaging mode or the manipulation
+mode.</p>
+<p>Regardless of which mode is used, the microscope controller responsible for
+the microscope feedback and data collection runs at a rate of about 100,000Hz.
+This feedback loop keeps the normal force or amplitude of the cantilever
+constant. The collected data are send to a graphics engine which updates the
+three-dimensional virtual reality display at a rate of about 20 Hz. Furthermore,
+the collected data are send to the Phantom controller which reconstructs the 'feelable'
+surface for the user at a rate of about 1000 Hz.</p>
+<p>In the imaging mode, the force stylus, which is connected to the Phantom
+controller, can be used to either feel the surface, to move the surface with 6
+degrees of freedom or to zoom in and out. It is important to notice that in the
+imaging mode, the user does not control the microscope tip but he/she merely
+sees or feels the reconstructed surface.</p>
+<p>Conversely, in the manipulation mode the user has control over the movement
+of the tip. The tip is now virtually connected to the Phantom stylus and the
+stylus can be used to move the tip over the surface in order to manipulate
+objects on it. These manipulations can be carried out in several different ways.&nbsp;</p>
+<p>
+1.) <i>Lateral force </i>(x-y direction). By positioning the tip carefully next
+to the sample, lateral forces can be applied in contact mode to modify a chosen
+object in a controlled manner while the normal force is kept constant. This mode
+can also be used for ‘AFM lithography’, where the tip is used to write or
+scratch patterns on the surface.&nbsp;</p>
+<p> 2.) <i>Normal force </i>(z direction). The user
+can also apply normal forces to the sample under investigation while the lateral
+position is kept constant. In this case, the tip is placed on top of the sample
+by using the haptic feedback, and is then pushed into and retracted from the
+sample (computer controlled force curve).&nbsp;</p>
+<p>[...]</p>
+<p>The NanoManipulator makes all these manipulations straightforward, with a
+natural and transparent interface for the user.</p>
+<p>The scaling factor between the Phantom force stylus and the image is such
+that the range of the stylus (about 30 cm) corresponds to the range of the image
+on the screen. Thus, the scaling factor depends on the image size; operating on
+a 300x300 nm<sup>2</sup> or a 30x30 µm<sup>2</sup> image translates into a scaling factor of 10<sup>6</sup>
+or 10<sup>4</sup> , respectively. </p>
+<i>
+<p>2) Haptics and force feed-back</p>
+</i>
+<p>As mentioned above the data coming from the microscope are sent to the
+Phantom controller, which re-constructs a ‘feelable’ surface for the user.
+Thus, all the data collected by the microscope (topography, frictional force
+images, error signal images, compliance, and others) can be felt by the user. In
+its current version, the data are presented to the user as a hard surface that
+can be traced with the force stylus. In its simplest version, the user just
+feels the ‘bumps’ and ‘valleys’ of the topography of the sample.
+However, it is also possible to sense, for instance, regions of high and low
+friction where high friction may be represented as raised regions and low
+friction as lower regions.</p>
+<p>It should be mentioned, however, that the user does not directly feel forces
+which are proportional to the actual forces acting on the cantilever, but he/she
+just feels a surface representation that is simultaneously reconstructed by the
+Phantom controller from the microscope data.</p>
+<p>The force feedback component of the NanoManipulator system has always been
+exciting to the scientists on the team, as they can feel the surface under
+investigation.</p>
+<p>However, it is during modifications that force feedback has been found to be
+most useful, allowing finer control and enabling whole new types of experiments.
+Force feedback has proved essential to finding the right spot to start a
+modification, finding the path along which to modify, and providing a subtler
+touch than would be permitted by the standard scan-modify-scan experiment cycle.</p>
+<p>Due to drift and hysteresis in the piezoceramic positioners of AFMs, the
+actual tip position may depend on environmental conditions and the history of
+the experiment.</p>
+<p>Therefore, the location of the tip relative to the sample might change over
+time. This makes it difficult to plan modifications accurately based only on an
+image that is reconstructed from scanned data. Force feedback, on the other
+hand, allows the user to locate objects and features on the surface by touch.</p>
+<i>
+<p>3) Virtual reality display</p>
+</i>
+<p>Ordinarily (without virtual reality), all of the data are already available
+to the scientist in a simple pseudo-color two-dimensional display (top view). In
+this simple data presentation, the scientist can measure any feature of the data
+to exacting precision using standard techniques such as cross sections and
+statistical algorithms. </p>
+<p>The NanoManipulator (Fig. 1) adds an advanced virtual reality/graphics
+interface to the AFM. As experiments are done, the topographic data are rendered
+in real time as a three-dimensional, directionally illuminated image, which
+makes the interpretation of height data more intuitive than in a simple
+two-dimensional display.</p>
+<p>The added, advanced VR display was found to be beneficial even for viewing
+static data sets. This is hardly surprising, since such data sets are often
+rendered for publication as shaded 3D images and give the audience a better
+understanding of the surface shape. A further benefit of advanced visualization
+comes from getting multiple naturally controlled views of the data that may
+reveal unexpected insights. Some of the users had examined one data set using
+pseudo-color images for months, yet discovered an important feature of the data
+(graphite sheets extruding from the surface) within seconds of viewing a
+real-time fly-over of the data set. These sheets were visible in only a few
+frames of the fly-over, when the lighting and eye point were in just the right
+position to highlight them [22]</p>
+<p>Generally, small features on surfaces with other height variations are better
+brought out using specular highlighting of a 3D surface (and are sometimes
+imperceptible in a 2D display). On the other hand, small features on very flat
+surfaces are better seen using standard, 2D-pseudo-color topviews (and are
+sometimes imperceptible in a 3D display). The NanoManipulator provides both the
+2D and 3D views simultaneously, each updated as the experiment progresses.</p>
+<font FACE="TimesNewRomanPSMT" SIZE="2">&nbsp;</font><!--mstheme--></font><!--msnavigation--></td></tr><!--msnavigation--></table></body>
+
+</html>

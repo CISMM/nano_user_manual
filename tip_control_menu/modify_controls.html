@@ -1,0 +1,399 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<title>Modify controls</title>
+<meta name="Microsoft Theme" content="user-man 010, default">
+<meta name="Microsoft Border" content="t, default">
+</head>
+
+<body bgcolor="#FFFFCC" text="#000000" link="#006600" vlink="#993333" alink="#CC6600"><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td><!--mstheme--><font face="Times New Roman">
+
+<p align="center"><font size="6"><strong><img src="_derived/modify_controls.html_cmp_user-man010_bnr.gif" width="600" height="60" border="0" alt="Modify controls"></strong></font><br>
+<nobr>[&nbsp;<a href="../index.htm">Home</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="tip_control_menu.htm">Up</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="image_controls.htm">Image&nbsp;controls</a>&nbsp;]</nobr> <nobr>[&nbsp;Modify&nbsp;controls&nbsp;]</nobr> <nobr>[&nbsp;<a href="modify_live_controls.htm">Modify&nbsp;live&nbsp;controls</a>&nbsp;]</nobr></p>
+<p align="center">&nbsp;</p>
+
+<!--mstheme--></font></td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><!--msnavigation--><td valign="top"><!--mstheme--><font face="Times New Roman">
+
+<h1><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#336666">Modify Parameters Dialog Box<!--mstheme--></font></h1>
+
+<p>This window allows you to control the behavior of Modify Mode.
+The parameters control how hard the AFM tip presses on the sample
+during a modification, how the tip moves, and whether it moves
+automatically or under the user's direct control. </p>
+
+<p>The button at the top, labeled either <b>Quick</b> or <b>Full</b>, controls
+which set of modify controls are displayed.&nbsp; </p>
+
+<h1><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#336666">Quick controls<!--mstheme--></font></h1>
+
+<p>These controls are designed to take effect immediately, so they can change
+the parameters that are used during some kinds of modifications. They are
+&quot;tweak&quot; controls, so if a parameter is slightly wrong it can be
+adjusted easily, in a control panel which will not obscure the 3D view of the
+surface.&nbsp; </p>
+
+<p><img border="0" src="../images/modify_quick_controls.gif" width="202" height="350"> </p>
+
+<p>The <b>Modify state</b> box shows what will happen if a modification is
+performed - which mode, style and tool will be used.&nbsp; </p>
+
+<p>The controls available are Setpoint, P-Gain, I-Gain, and D-gain, and have the
+same functions as in the ThermoMicroscopes SPMLab software and the Full
+Controls.&nbsp; </p>
+
+<p>The setpoint can be changed during a modification, which means the normal
+force the tip is applying can be changed.&nbsp; </p>
+
+<h1><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#336666">Modify Marker Display<!--mstheme--></font></h1>
+
+<p>These controls are always visible at the bottom of the Modify Parameters
+dialog box. They control the white lines that indicate a modification.&nbsp;</p>
+
+<p><b>Num Markers</b> sets how many are visible at once. A very large number can
+slow down the graphics display.&nbsp;</p>
+
+<p><b>Marker Hgt. (nm)</b> is an offset in nanometers above the surface. It
+insures that the lines are drawn at least some distance above the surface, so they
+are easily visible. Note that it only affects marker lines which haven't been
+drawn yet - you must rewind the stream file to increase the marker height for
+modifications which have already been performed. The height of the white lines
+is also determined by the height measured by the SPM - this allows you to see
+the path the tip traveled during the modification.</p>
+
+<p>The <b>Clear Markers</b> button clears all existing modification
+markers.&nbsp;Replay the stream to see the modification markers again.</p>
+
+<h1><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#336666">Full Controls<!--mstheme--></font></h1>
+
+<p><a href="../images/modify_full_controls.gif"><img border="2" src="../images/modify_full_controls_small.gif" width="640" height="216"></a></p>
+
+<p>[Click to see a full-sized image]</p>
+
+<h2><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339999"><a name="Mode">Mode</a><!--mstheme--></font></h2>
+
+<p>Oscillating or Contact. These modes are the same as those
+provided by the Thermo software. This dialog provides an
+additional set of parameters so that you can make an automatic
+switch to a different mode and higher-force settings when you do
+a modificatio<font size="3">n. The NanoManipulator will
+automatically switch from oscillating mode imaging to contact
+mode modifications without withdrawing the tip. This is most
+often what is done, because contact mode can provide a higher
+force for modification than oscillating mode, and contact mode
+allows measurement of lateral force. </font></p>
+
+<!--mstheme--></font><!--msthemelist--><table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman"><font size="3">Setpoint - nA for Contact, % for Amplitude Oscillating, nA
+    for Phase Oscillating.&nbsp;</font><!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman"><font size="3">Proportional Gain - same as Thermo software.
+        </font><!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman"><font size="3">Integral Gain - same as Thermo software. </font><!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman"><font size="3">Derivative Gain - same as Thermo software.
+        </font><!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman"><font size="3">Rate (um/sec) - Control the maximum rate
+        of the modification. BUG it doesn't affect the speed of
+        modification.</font><!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman"><font size="3">Amplitude - For oscillating mode, same as Thermo software. </font><!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman"><font size="3">Frequency - For oscillating mode,&nbsp; same as Thermo software.</font><!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman"><font size="3">Input Gain - For oscillating mode,&nbsp; same as Thermo software.</font><!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman"><font size="3">Drive Attenuation - For oscillating mode,&nbsp; same as Thermo software.</font><!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman"><font size="3">Phase or Amplitude - For oscillating mode,&nbsp; same as Thermo software.</font><!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman"><font size="3">Phase angle - For oscillating mode,&nbsp; same as Thermo software.</font><!--mstheme--></font><!--msthemelist--></td></tr>
+<!--msthemelist--></table><!--mstheme--><font face="Times New Roman">
+<p><font size="3">Note that not all parameters are meaningful for each kind of
+feedback. Contact mode feedback ignores all parameters after Rate, while Phase
+Angle is used only by Phase Oscillating feedback. It is unlikely that you will
+want to change many of the parameters used for Oscillating feedback, since the
+NanoManipulator does not provide the oscilloscope and graph displays that the
+ThermoMicroscopes software provides to assist in setting these parameters. These
+controls are available mainly to record the values you set up in the
+ThermoMicroscopes software.&nbsp;</font></p>
+<h2><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339999">Offset Compensation<!--mstheme--></font></h2>
+
+<p>The checkbox <b>Offset Comp on</b> controls offset compensation. When the
+image mode is oscillating and the modify mode is contact (or vice versa), there
+will be an offset between the measured height of a spot on the surface in
+contact mode and in oscillating mode. Offset compensation will move the sample
+points in modify mode so they feel like they are at the same height as those
+acquired when scanning. It does this by pausing for a short time when the user
+first enters modify mode, and storing the offset measured. During the course of
+the modification, all points are shifted by the offset before they are used to
+feel the sample. Usually there is no reason to disable offset compensation.</p>
+
+<h2><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339999"><a name="Style">Style</a><!--mstheme--></font></h2>
+
+<p>The style controls how the tip moves during one step of a
+modification. How big a step is depends on what kind of tool is
+used to do the modification - please refer to the next section.</p>
+
+<h3><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339966">Sharp<!--mstheme--></font></h3>
+
+<p>The AFM tip stays on the surface, using the feedback
+parameters to maintain a constant force.</p>
+
+<h3><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339966">Sweep&nbsp;<!--mstheme--></font></h3>
+
+<p>The AFM tip stays on the surface, maintaining a
+constant force. For each step forward, it makes a side-to-side
+motion, with the width specified. This makes the tip act more
+like a spatula or a broom, pushing an object on the surface all
+along the width of the sweep, nudging it forward. It can also be
+used to clear an area of the surface. If you are using the <strong>freehand</strong>
+tool, the direction of the sweep is determined by the twist of
+the Phantom pen, and is indicated by lines flanking the hand icon.
+If you are using the <strong>line</strong> tool, the sweep is
+constrained to be perpendicular to each line segment.</p>
+
+<!--mstheme--></font><!--msthemelist--><table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">Sweep width (nm) - determines how wide the sweeping
+        motion is.<!--mstheme--></font><!--msthemelist--></td></tr>
+<!--msthemelist--></table><!--mstheme--><font face="Times New Roman">
+
+<p><img border="0" src="../images/sweep_diag.gif" width="304" height="407"></p>
+
+<p>This illustration shows how the tip moves using the sweep style with the line
+tool. The sweep width parameter is shown at the top, and the line tool's step
+size parameter is show on the right. Each step takes 3 data points. Here the tip
+starts at point 0. It takes a step forward by moving to points 1, 2 and 3 in
+order. The next step takes it to points 4, 5 and 6.&nbsp;</p>
+
+<h3><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339966">Sewing&nbsp;<!--mstheme--></font></h3>
+
+<p>The AFM tip punches down to the surface, then
+retracts and moves forward, punching down again. This mode avoids
+putting any lateral forces on the tip or the sample, so it can
+make a sharp cut in a sample, avoiding &quot;snow-plow&quot;
+effects. The force applied each time the tip punches down is controlled by the
+setpoint parameter of the Mode used.</p>
+
+<!--mstheme--></font><!--msthemelist--><table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">Bottom delay (ms) - How long to wait at the bottom of the punch.<!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">Top delay (ms) - How long to wait at the top of the punch.<!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">Pullout height (nm) - The distance to pull away from the bottom of the
+    punch.&nbsp;<!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">Punch distance (nm) - The minimum distance to move laterally before
+    performing another punch. The tip will not punch again until the hand moves
+    at least the punch distance away from the last punch. Using the line tool,
+    this value should be smaller than the line tool step size.&nbsp;<!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">Speed (nm/s) -<!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">Watchdog distance (nm) -<!--mstheme--></font><!--msthemelist--></td></tr>
+<!--msthemelist--></table><!--mstheme--><font face="Times New Roman">
+<p>Note that it is not possible to use the Sewing style with Oscillating
+feedback or the Slow Line tool - these controls are disabled if you choose
+Sewing style.&nbsp;</p>
+
+<h3><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339966">Force Curve<!--mstheme--></font></h3>
+
+<p>At each point, the tip will take a Force-Spectroscopy
+Curve, and return the results. This can be quite slow, so be
+careful before requesting a large number!</p>
+
+<!--mstheme--></font><!--msthemelist--><table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">Start height (nm) - Height to start taking data at, relative to the surface.<!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">End height (nm) - Height to descend to, relative to the surface.<!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">Pullout height (nm) - Height above the surface to start descent.<!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">Force limit (nA) - A safety setting - the forcecurve will abort if it
+    reaches this setpoint during descent.&nbsp;<!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">F. C. distance (nm) - Distance between consecutive force curves. If you
+    tell the program to take a forcecurve at a point farther than this from the
+    last point then forcecurves will be taken at points along the line in
+    between with spacing given by this value. If you tell the program to take a
+    forcecurve at a point less than this distance from the last one then it will
+    ignore the request.&nbsp;<!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">Number of samples - Number of data points to collect during each force
+    curve.<!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">Number of half-cycles - Number of descent/ascent operations to perform at
+    each point.<!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">Sample speed (um/sec) - speed of descent/ascent while taking data.<!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">Pullback speed (um/sec) - speed of ascent when going to the pullout
+    height.<!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">Start speed (um/sec) - speed of descent when going from pullout height to
+    the start height.<!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">Feedback speed (um/sec) - speed when going from the end height back to the
+    feedback height.<!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">Averaging - number of samples to average at each height.<!--mstheme--></font><!--msthemelist--></td></tr>
+<!--msthemelist--></table><!--mstheme--><font face="Times New Roman">
+<p>For proper operation, this relation should hold: Pullout height &lt;= Start
+Height &lt;= End Height. These heights are measured relative to the surface of
+the sample, which is defined to be zero and measured in step 2 below, where the
+tip is put into contact mode feedback. Positive heights are below the surface,
+and negative heights are above the surface; i.e. heights are in terms of
+&quot;depth&quot; into the surface.</p>
+<p>Here are the steps the SPM performs if you've chosen to do 2 half-cycles:
+<ol>
+  <li>Set the contact mode setpoint along with constant P=2.0, I=0.2, D=0.0</li>
+  <li>Wait until the tip settles into feedback, and record the surface
+    height.&nbsp;</li>
+  <li>Report the point datasets.</li>
+  <li>Start the forcecurve:
+    <ol>
+      <li>go up to pullout height.<br>
+        -------- (down half-cycle)</li>
+      <li>go down to start height.</li>
+      <li>go down to end height taking the specified number of samples at
+evenly spaced intervals.<br>
+        -------- (up half-cycle)</li>
+      <li>go up to start height taking the specified number of samples at
+evenly spaced intervals.</li>
+      <li>go up to pullout height.<br>
+        --------</li>
+      <li>go back to original height at which we started the forcecurve (z=0).</li>
+    </ol>
+  </li>
+  <li>Pull out to a safe height above the pullback height.</li>
+  <li>Translate to the next point.</li>
+  <li>Start over at 1 to perform the next force curve.&nbsp;</li>
+</ol>
+
+<p>Note that it is not possible to use the Force curve style with Oscillating
+feedback or the Slow Line tool - these controls are disabled if you choose Force
+curve style.&nbsp;</p>
+
+<h2><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339999"><a name="Tools">Tools</a><!--mstheme--></font></h2>
+
+<h3><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339966">Freehand<!--mstheme--></font></h3>
+
+<p>The tip follows the motion of your hand during
+a modification. The shape of the surface during the modification
+is displayed haptically, so the user can respond to dynamic
+changes. </p>
+
+<p>Typical modification walkthrough:&nbsp; </p>
+
+<!--mstheme--></font><!--msthemelist--><table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">Choose parameters for the mode and style.&nbsp;<!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">Press the Phantom button, and feel the shape of the sample. Locate the
+    position of the modification, by feeling for surface features.&nbsp;<!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">Hit Magellan button 4 (Commit) to start using modification parameters. You
+    can still feel the surface shape, and you may be able to feel the surface
+    shape change as the tip affects the sample.&nbsp;<!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">Release the Phantom button, and the SPM will being using imaging
+    parameters again as it scans the surface.&nbsp;<!--mstheme--></font><!--msthemelist--></td></tr>
+<!--msthemelist--></table><!--mstheme--><font face="Times New Roman">
+<p>It is also possible to alternate between imaging and modification parameters
+without scanning. While holding the Phantom button, hit Magellan button 4
+(Commit) to use modification parameters, then hit Magellan button 8 (Cancel) to
+switch back to image parameters. This can be done repeatedly, without the tip
+ever scanning the surface. This allows you to feel the shape and position of an
+object that might not remain in a fixed position during scanning.&nbsp; </p>
+
+<h3><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339966">Line<!--mstheme--></font></h3>
+
+<p>The modification is planned by specifying a step
+size for how often the AFM is to collect data, and then
+specifying the endpoints of line segments where the tip will
+travel. The modification is automatically performed. The uniform
+tip motion allows sensitive measurements of the lateral force (if
+you are using <strong>sharp</strong> style). When using the <strong>sweep</strong>
+style, the tip will move side-to-side as it moves along the
+polyline, and when it gets to a turn, it will sweep out an arc to
+turn the corner. The sweep is always perpendicular to the
+direction of motion. Note that a line mode modification is not interruptible - once it has been issued, it must complete.
+It is also not possible to change the setpoint during a line modification. Use <strong>slow
+line</strong> tool if you want to interrupt the modification part
+way through or change the setpoint. </p>
+
+<!--mstheme--></font><!--msthemelist--><table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">Step size (nm) - This determines how often that AFM tip
+        collects and returns data as the tip automatically
+        follows the polyline the user specified. The tip will
+        make a short step at the end of each polyline segment to
+        reach the exact end of the segment.<!--mstheme--></font><!--msthemelist--></td></tr>
+<!--msthemelist--></table><!--mstheme--><font face="Times New Roman">
+<p>Typical modification walkthrough:&nbsp; </p>
+
+<!--mstheme--></font><!--msthemelist--><table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">Choose parameters for the mode and style.&nbsp;<!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">Press the Phantom button, and feel the shape of the sample. Locate the
+    position of the start of the modification, by feeling for surface features.<!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">Release the Phantom button. A blue marker line will be left at that
+    position.&nbsp;<!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">Press the Phantom button, and some horizontal lines will stretch from the
+    last marker to the Phantom to show the path of the tip. Feel the surface to
+    locate features. Release the Phantom button to leave another marker.&nbsp;<!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">Press-feel-release to specify the rest of the path of the tip.<!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">Now press Commit (Magellan button 4). The SPM tip will move to the first
+    marker, switch to using modification parameters, and move along the path you
+    specified. Hit Cancel (Magellan button 8) instead if you want to erase the
+    path you specified and start over. Cancel won't do anything once you've hit
+    Commit, however.&nbsp;<!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">Once the SPM tip reaches the end of the path, it will switch back to
+    imaging parameters, and begin scanning the surface again.&nbsp;<!--mstheme--></font><!--msthemelist--></td></tr>
+<!--msthemelist--></table><!--mstheme--><font face="Times New Roman">
+
+<h3><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339966">Constrained Freehand&nbsp;<!--mstheme--></font></h3>
+
+<p>The user specifies two endpoints of a
+line, and then any subsequent motions are constrained to that line.
+The user can feel the sample and modify while the tip motion is constrained. </p>
+
+<p>Typical modification walkthrough:&nbsp; </p>
+
+<!--mstheme--></font><!--msthemelist--><table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">Choose parameters for the mode and style.&nbsp;<!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">Press the Phantom button, and feel the shape of the sample. Locate the
+    position of one point on the constraint line, by feeling for surface
+    features.<!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">Release the Phantom button. A blue marker line will be left at that
+    position.&nbsp;<!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">Press the Phantom button, and some horizontal lines will stretch from the
+    last marker to the Phantom to show the path of the tip. Feel the surface to
+    locate features. Release the Phantom button to leave the second constraint
+    line marker.&nbsp;<!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">Now, when you press the Phantom button, the tip will be constrained to
+    move along the line you specified. The green aim line shows the position of
+    the tip, while the blue cone shows your hand position. You can feel the
+    surface shape only along the constraint line.&nbsp;<!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">Press Magellan button 4 (Commit). The SPM will begin using modification
+    parameters. The tip motion is still constrained.&nbsp;<!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">Release the Phantom button. The SPM will being using imaging parameters,
+    and scan the surface.&nbsp;<!--mstheme--></font><!--msthemelist--></td></tr>
+<!--msthemelist--></table><!--mstheme--><font face="Times New Roman">
+<p>It is also possible to hit the Cancel button while modifying. This will erase
+the current constraint line, and allow you to specify a new one without
+scanning.&nbsp;</p>
+
+<h3><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339966">Slow Line<!--mstheme--></font></h3>
+
+<p>Controls like those of a VCR help move the tip.
+The user specifies the endpoints of a line or polyline. Hit <b>Commit</b> to
+begin using modification force. The tip moves to the first endpoint and sits
+there. If the user hits <strong>Play</strong> in the <strong><a href="modify_live_controls.htm">Modify live controls</a></strong>
+window, the tip will request a new point,
+and move forward as soon as it gets a response from the AFM. Hit <strong>Pause</strong>
+to stop the tip's motion. If the user hits <strong>Step</strong>,
+the tip will move forward one step-size and wait. Hit <b>cancel</b> to resume
+scanning.&nbsp; </p>
+
+<!--mstheme--></font><!--msthemelist--><table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/user-man/blubul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Times New Roman">Step size (nm) - This determines how often that AFM tip
+        collects and returns data as the tip automatically moves
+        forward.<!--mstheme--></font><!--msthemelist--></td></tr>
+<!--msthemelist--></table><!--mstheme--><font face="Times New Roman">
+<p>Typical modification walkthrough: Please see the <a href="modify_live_controls.htm">Modify live controls</a>
+page.&nbsp; </p>
+
+<h3><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339966">A Note about Names<!--mstheme--></font></h3>
+<p>You may wonder why we have both a <b>line</b> tool and a <b>slow
+line</b> tool. The line tool was developed first, and we made it perform as fast
+as possible, because it is the tool used most often. One consequence is that the
+whole line is sent as one command to the SPM software, and it cannot be
+interrupted after the command is sent - the line modification must be allowed to
+run its course. We developed the slow line tool specifically to be
+interruptible, and to allow other measurements to occur while the modification
+is taking place. By stepping forward slowly, it is possible to stop just as the
+tip makes contact with a structure on the sample, and begin taking electrical
+measurements, for example. </p>
+<h2><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339999">Accept and Revert<!--mstheme--></font></h2>
+
+<p>The <b>Accept</b> button will remember changed parameters so the SPM will use
+them during the next modification. It will turn pink when the parameters have
+been changed from the current modify parameters. The <b>Revert</b> button resets
+the controls so they show the modify parameters the SPM used last. </p>
+
+<p>&nbsp; </p>
+<!--mstheme--></font><!--msnavigation--></td></tr><!--msnavigation--></table></body>
+</html>

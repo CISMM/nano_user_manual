@@ -1,0 +1,244 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="Template"
+content="C:\Program Files\Microsoft Office\Office\html.dot">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<title>Manipulation Tutorial</title>
+<meta name="Microsoft Theme" content="user-man 010, default">
+<meta name="Microsoft Border" content="t, default">
+</head>
+
+<body bgcolor="#FFFFCC" text="#000000" link="#006600" vlink="#993333" alink="#CC6600"><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td><!--mstheme--><font face="Times New Roman">
+
+<p align="center"><font size="6"><strong><img src="_derived/modify-tutorial.html_cmp_user-man010_bnr.gif" width="600" height="60" border="0" alt="Manipulation Tutorial"></strong></font><br>
+<nobr>[&nbsp;<a href="index.htm">Home</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="tutorials.htm">Up</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="visualization_and_replay.htm">Visualization&nbsp;and&nbsp;Replay</a>&nbsp;]</nobr> <nobr>[&nbsp;Manipulation&nbsp;Tutorial&nbsp;]</nobr></p>
+<p align="center">&nbsp;</p>
+
+<!--mstheme--></font></td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><!--msnavigation--><td valign="top"><!--mstheme--><font face="Times New Roman">
+
+<h1><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#336666">Manipulation Tutorial<!--mstheme--></font></h1>
+
+<h3><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339966">NanoManipulator DP 100<!--mstheme--></font></h3>
+
+<p>In order to successfully use the NanoManipulator, you must be familiar with the
+ThermoMicroscopes SPM you
+will be using, and be able to image the sample. You should also
+have some idea what settings would be used with the SPM tip you
+are using for imaging in contact and non-contact/oscillating mode.
+</p>
+
+<h3><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339966">Connecting to your SPM
+<!--mstheme--></font></h3>
+
+<p>First, load a sample and tip in your SPM. On the
+ThermoMicroscopes SPM controller computer, start SPMLab using the <b>NM DP100 SPML 5.01
+</b>icon (We'll refer to this as the TM software). This version knows how to
+connect to the NanoManipulator. Put the tip into feedback and start scanning
+your sample, as described in ThermoMicroscopes manual and training procedures.
+Now you are ready to connect to the NanoManipulator.
+</p>
+
+<p>Now, on the NanoManipulator computer, start the NanoManipulator, either by
+double-clicking the desktop icon, or choosing <b>Start .. Programs ..
+NanoManipulator .. NanoManipulator</b>.&nbsp;
+</p>
+
+<p>If this is the first time you have run the NanoManipulator since rebooting
+your computer, the Phantom may not be centered on the surface when it is
+centered in its workspace. If you move the Phantom pen and can't reach the
+corners of the surface, move the Phantom through it's working volume, and then
+choose <b>Tools .. <a href="tools_menu/phantom.htm">Phantom</a></b> and press
+the <b>Reset Phantom</b> button.&nbsp;
+</p>
+
+<p>To open a connection to an SPM, choose <b><a href="file_menu/open_spm_connection.htm">Open SPM Connection</a> </b>from the <b>File</b>
+menu.&nbsp;</p>
+<p>The Open SPM Connection dialog appears. Click the <b>Choose...</b> button and
+change the word &quot;log&quot; in the suggested filename to
+&quot;tutorial&quot;, and click <b>OK</b>. Click <b>Open</b>, and the
+NanoManipulator will connect to your ThermoMicroscopes SPM.&nbsp;</p>
+<p>You will see the <b>Image Params</b> and <b>Modify Params</b> windows appear
+along the left edge, and the <strong>setpoint, P, I,</strong>
+and <strong>D gain</strong>  parameters will change to match those set in the TM
+software. You will probably have to hit the <a href="phantom_modes.htm#Center"><b>Center</b></a>
+button to get a view of the surface.&nbsp;</p>
+<h3><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339966">SPM Control
+<!--mstheme--></font></h3>
+
+<p><b>Imaging controls:</b> There are two ways you can change the feedback parameters for imaging your sample.
+In the <strong>Tipcontrol</strong> menu, choose <strong><a href="tip_control_menu/image_controls.htm">Image
+Params</a></strong>. This window provides entry
+boxes to immediately change the <strong>setpoint, P, I,</strong>
+and <strong>D gain</strong> parameters. These are directly linked
+to the TM software, so adjust them the same way you would in
+the TM software.</p>
+
+<p>If you click the <b>Full params </b>button, the window expands to show more
+options. The difference is
+that this view lets you switch between <strong>oscillating</strong>
+and <strong>contact</strong> mode imaging. To use oscillating
+mode, the drive frequency and other parameters should be set up
+in the TM software. You can also change the <strong>setpoint</strong>
+and <strong>PID</strong> in this panel - but they do not take affect until you
+click <b>Accept</b>. This allows you to switch from oscillating to contact (or
+vice versa) and set an appropriate setpoint all in one step. If you change your
+mind, click <b>Revert</b> and all parameters will be changed back to the current
+SPM settings.&nbsp; </p>
+
+<p><b>Modify controls:</b>  To set up parameters for a modification, choose <strong>Tipcontrol
+.. <a href="tip_control_menu/modify_controls.html">Modify Params</a></strong>. The NanoManipulator
+can automatically switch from
+oscillating mode imaging to contact mode modifications. This is
+most often what is done, because contact mode can provide a
+higher force for modification than oscillating mode, and provide
+lateral force measurements.</p>
+
+<p>To set up for a modification, first choose the
+feedback parameters to use. To avoid damaging your sample or tip
+unnecessarily, start by choosing the setpoint and the PID that
+you might use to image the sample. Then, if the sample is not
+modified, increase the setpoint for the next modification until
+the sample is modified.</p>
+
+<p>Remember to set the setpoint based on the <b>free</b>
+value of the T-B (top minus bottom) signal for contact mode
+modifications. You can determine this value by withdrawing the tip, turning off
+oscillating/non-contact mode, and observing the T-B signal in the oscilloscope
+window of the TM software.</p>
+
+<p>The <b><a href="tip_control_menu/modify_controls.html#Style">style</a></b> of modification affects how the
+SPM tip moves as the modification progresses. The <b>sharp</b>
+style is the simplest, in which the tip simply follows your
+movements while keeping in contact with the surface. Use sharp
+style for this tutorial, but check the <a href="tip_control_menu/modify_controls.html#Style">modification
+parameters, style</a> page for explanations of
+all available styles.</p>
+
+<p>The <b><a href="tip_control_menu/modify_controls.html#Tools">tool</a></b> determines where the tip moves.
+Two tools are often used. With the <b>freehand</b> tool, the tip
+follows your hand position as you move, and you can feel the
+sample as it changes during your modification. With the <b>line</b>
+tool, you feel where you want the endpoints of a modification to
+be, then let the computer automatically make the modification. Check the <a href="tip_control_menu/modify_controls.html#Tools">modification
+parameters, tools</a> page
+for explanations of all available tools.</p>
+
+<p>Here are the steps of a modification: </p>
+
+<ol>
+    <li>Determine where you want to make a
+        modification. In <b>grab</b> mode, see if the hand icon
+        can penetrate the surface at that position. If not, you
+        should grab the surface and move it so that spot is
+        easily reachable. (<a href="phantom_modes.htm#Grab">About <strong>grab</strong> 
+      mode</a>)</li>
+    <li>Make
+        sure you are using reasonable modification parameters.
+        For a start, choose a contact mode modification; set the PID to be the same you are using for imaging, and make the <b>setpoint</b> about 4 nanoAmps higher
+        than the free space value of the T-B signal.</li>
+    <li>Choose the <b>sharp</b> style, and choose
+        your tool (See 5 for <b>freehand</b> and 6 for <b>line</b> tools).</li>
+    <li>Press the <b>touch </b>button. The Phantom
+        is now in the mode that allows you to make a modification
+        to your sample.</li>
+    <li>If you choose the <b>freehand</b> tool,
+        the tip follows your hand to make the modification. When
+        your press the Phantom button, the SPM tip follows your
+        hand and you can feel the height of the surface as
+        measured by the microscope. There are two actions you can
+        take:<ol>
+            <li>If you release the Phantom button, the SPM will resume scanning the surface.&nbsp;</li>
+            <li>If you hit
+                the <b>commit</b>  button (Magellan button 4), the SPM will start
+                using the modification parameters you set up,
+                which usually means it will press harder on the surface. You can still feel the
+                shape of surface while the modification is
+                happening. When you are done, release the button,
+                and the SPM will resume scanning the surface.</li>
+        </ol>
+    </li>
+    <li>If you choose the <b>line</b> tool, you
+        specify where the modification is going to happen, and
+        then the NanoManipulator executes the modification automatically. When you press the Phantom
+        button, the SPM tip follows your hand. When you release
+        the button, the end of the line is marked with a vertical
+        blue line. Then you can press the Phantom button again to
+        feel the surface, and release to mark the other end of
+        the line. If you continue pressing and releasing, you can
+        specify a whole series of lines for the modification to
+        follow.&nbsp;
+      <ol>
+        <li> If you misplace a marker, hit the <b>cancel</b>
+        button to start over placing markers.&nbsp;The SPM will resume
+          scanning.&nbsp;</li>
+        <li>If you are satisfied,
+        hit the <b>commit</b> button, and the microscope does the
+        modification.</li>
+      </ol>
+    </li>
+</ol>
+
+<p>The <b><a href="tools_menu/stripchart.htm">Stripchart</a></b> window pops up as soon as
+you start your first modification. By default, it graphs the height the tip is
+measuring and the lateral force. It can graph all the data that is
+being received from the SPM, including the tip's position on the
+surface, lateral force, and internal sensor. To export the modification data, go
+to <b>File .. <a href="file_menu/save_mod_data.htm"> Save modification data</a></b>. The text file produced can be easily opened in
+KaliedaGraph, Excel, or another graphing package to analyze the
+modification which was performed. But don't worry if you don't
+save a modification file - all the data you are taking is saved in the <b>stream</b>
+ file. </p>
+
+<p>When you are done scanning and modifying your
+sample, go to <b>File .. <a href="file_menu/close.htm">Close</a></b> to disconnect from the SPM, or to <b>File ..
+Exit</b> to disconnect and exit. Your stream file will be saved to disk.&nbsp; </p>
+
+<h2><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339999">Viewing stream files<!--mstheme--></font></h2>
+
+<p>The NanoManipulator recognizes files that end in the &quot;.nms&quot;
+extension as NanoManipulator Stream files, and will open them if you
+double-click on them using the Windows Explorer. You can also start the
+NanoManipulator, and use the <b>File .. <a href="file_menu/open_stream_files.htm">Open
+Stream File</a></b> menu item to open a stream file.&nbsp;Review the <a href="visualization_and_replay.htm">Visualization and Replay</a>
+tutorial for more hints on viewing and analyzing your recorded
+experiments.&nbsp; </p>
+
+<h3><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339966">Getting data for analysis:<!--mstheme--></font></h3>
+
+<p>
+There are two types of data you might want to do
+more analysis on: the scan data and the modification data. The <a href="tools_menu/stripchart.htm">Stripchart</a> lets you see roughly what happened during a
+modification, but other analysis packages can do more, like fit
+curves and make many changes to the appearance of the graph. We
+already described how to save the modification data above - just go to <b>File
+.. <a href="file_menu/save_mod_data.htm"> Save modification data</a></b>. The save dialog suggests a filename based on the time the
+modification started.
+</p>
+
+<p>To save scan data, choose <b>File .. <a href="file_menu/save_plane_data.htm">Save Plane Data</a></b>.
+You can save scan data as a ThermoMicroscopes file and open it in the SPMLab
+software to do analysis on it.&nbsp;
+</p>
+
+<h3><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339966">Presentation:<!--mstheme--></font></h3>
+
+<p>The 3D view of the surface can be extremely
+effective for presentation of your data. To save a picture of
+the screen, go to <b>File .. <a href="file_menu/save_screenshot.htm"> Save screen</a></b>. The
+<b>Show screen text </b>toggle button removes text and other decorations from the screen, so you
+can add your own labels later with another program. An often-used
+technique is to freeze the replay before a modification, save a
+TIFF file, then pause again after the modification and one scan
+of the surface has been completed, and save another TIFF file, to
+show the results of a modification. TIFF files can be imported
+into MS Word and PowerPoint, and are not compressed, so they
+preserve all color data. </p>
+
+<p>
+&nbsp; <br>
+&nbsp; </p>
+<!--mstheme--></font><!--msnavigation--></td></tr><!--msnavigation--></table></body>
+</html>

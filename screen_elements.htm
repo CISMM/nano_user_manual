@@ -1,0 +1,76 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Surface View Window</title>
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta name="Microsoft Theme" content="user-man 010, default">
+<meta name="Microsoft Border" content="t, default">
+</head>
+
+<body bgcolor="#FFFFCC" text="#000000" link="#006600" vlink="#993333" alink="#CC6600"><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td><!--mstheme--><font face="Times New Roman">
+
+<p align="center"><font size="6"><strong><img src="_derived/screen_elements.htm_cmp_user-man010_bnr.gif" width="600" height="60" border="0" alt="Surface View Window"></strong></font><br>
+<nobr>[&nbsp;<a href="index.htm">Home</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="introduction.htm">Introduction</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="feature_list.html">Features</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="main_window.htm">Main&nbsp;Window</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="file_menu/file_menu.htm">File&nbsp;Menu</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="setup_menu/setup_menu.htm">Setup&nbsp;Menu</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="tip_control_menu/tip_control_menu.htm">Tip&nbsp;Control&nbsp;Menu</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="analysis_menu/analysis_menu.htm">Analysis&nbsp;Menu</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="tools_menu/tools_menu.htm">Tools&nbsp;Menu</a>&nbsp;]</nobr> <nobr>[&nbsp;Surface&nbsp;View&nbsp;Window&nbsp;]</nobr> <nobr>[&nbsp;<a href="phantom_modes.htm">Phantom&nbsp;Modes</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="magellan_controls.htm">Magellan&nbsp;Controls</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="widgets.htm">Widgets</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="tutorials.htm">Tutorials</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="troubleshooting.htm">Troubleshooting</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="nmviewer.htm">NMViewer</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="glossary.htm">Glossary</a>&nbsp;]</nobr></p>
+<p align="center">&nbsp;</p>
+
+<!--mstheme--></font></td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><!--msnavigation--><td valign="top"><!--mstheme--><font face="Times New Roman">
+<h2><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339999"><a name="Perspective">Perspective</a><!--mstheme--></font></h2>
+<p>The view of the surface is a <b>perspective</b> view, appropriate for
+simulating the look of the real world. Objects closer to us are larger than
+objects far away. This also means that lines which are parallel in 3 dimensions
+(3D) are sometimes not drawn parallel on your 2D screen. For instance, the <a href="analysis_menu/measure_lines.htm">Measure Lines</a>
+and <a href="phantom_modes.htm#The Green Aim Line">green Aim Line</a> are all
+parallel, but are not drawn parallel in the picture below.</p>
+<p>Their bottom, near the bottom of the screen, are closer together than their
+tops. This is because their bottoms are farther away from us. If you think of
+them as parallel, it can help in perceiving the shape and position of things in
+the virtual environment. In particular, by using the <a href="phantom_modes.htm#The Green Aim Line">green
+Aim Line</a>, you can determine where the hand is in relation to the surface, as
+explained in the <a href="phantom_modes.htm">Phantom Modes</a> section.</p>
+<h2><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339999">Screen Elements<!--mstheme--></font></h2>
+<p>Various elements of the screen are labeled by numbers in this picture, and
+discussed below.</p>
+<p><img border="0" src="images/screen_elements.jpg" width="539" height="396"></p>
+<ol>
+  <li>Surface - Displays in 3D the height information from the plane selected by
+    the <a href="setup_menu/height_plane.htm">Height Plane</a> control.&nbsp;</li>
+  <li>Orientation arrow - This red arrow shows which edge of the surface is
+    &quot;up&quot; in the ThermoMicroscopes software. This edge is where the
+    scan starts, and always appears as the top of the image if the plane data is
+    <a href="file_menu/save_plane_data.htm">saved</a>.</li>
+  <li>Measure Lines - These red, yellow and blue lines start in the corners of
+    the surface, and provide a way to make quick measurements of surface
+    features. See <a href="analysis_menu/measure_lines.htm">Measure Lines</a>.</li>
+  <li>The upper left corner of the screen is the time indicator. If you are
+connected to a live SPM, it says <b>Live(23)</b> where the number indicates the
+number of seconds you have been connected to the SPM. If you have <a href="file_menu/open_stream_files.htm"> opened a
+stream file</a>, it says either <b>Play (23)</b>, <b>Play 5x(23)</b>, or <b>Pause(23)</b>.
+The multiplier indicates how much faster than real-time you are <a href="tools_menu/replay_control.htm"> replaying</a> the
+stream file, and the number indicates the
+number of seconds that have elapsed in the recorded experiment. Pause indicates that time is not advancing. If you have opened a ThermoMicroscopes
+data file or other static data file, it says <b>Static File.</b> </li>
+  <li>In the top center of the screen is an indicator of the <a href="phantom_modes.htm"> Phantom
+    mode</a>. It
+provides a quick way to tell what will happen if you press the Phantom
+button.&nbsp;</li>
+  <li>The measure line display show the distances and angles between the three
+measure lines. These are explained in the section on <a href="analysis_menu/measure_lines.htm">Measure Lines</a>.</li>
+  <li>In the lower left corner, the <a href="setup_menu/height_plane.htm">Height Plane</a>
+    name and scale are displayed. On the next line the grid resolution and the
+    size of the current scan area are displayed. And on the line at the bottom,
+    if you are scanning or looking at a stream file, the point on the surface
+    under the hand is displayed. If you are <a href="phantom_modes.htm#Touch">touching</a>
+    the surface, it will display the most recent point data sent by the SPM. </li>
+  <li>In the lower right corner, the setpoints used for image and modify modes
+    are displayed. </li>
+  <li>The hand icon represents the position of the Phantom in the virtual
+    environment. Its shapes are described in <a href="phantom_modes.htm">Phantom Modes</a>. </li>
+  <li>(Not shown) The scan-line indicator. A green line lies across the surface,
+    and indicates which line the SPM has just scanned, both during live and
+    recorded experiments. </li>
+</ol>
+&nbsp;<!--mstheme--></font><!--msnavigation--></td></tr><!--msnavigation--></table></body>
+
+</html>

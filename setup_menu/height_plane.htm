@@ -1,0 +1,60 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Height Plane</title>
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta name="Microsoft Theme" content="user-man 010, default">
+<meta name="Microsoft Border" content="t, default">
+</head>
+
+<body bgcolor="#FFFFCC" text="#000000" link="#006600" vlink="#993333" alink="#CC6600"><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td><!--mstheme--><font face="Times New Roman">
+
+<p align="center"><font size="6"><strong><img src="_derived/height_plane.htm_cmp_user-man010_bnr.gif" width="600" height="60" border="0" alt="Height Plane"></strong></font><br>
+<nobr>[&nbsp;<a href="../index.htm">Home</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="setup_menu.htm">Up</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="datasets.htm">Datasets</a>&nbsp;]</nobr> <nobr>[&nbsp;Height&nbsp;Plane&nbsp;]</nobr> <nobr>[&nbsp;<a href="color_map.htm">Color&nbsp;Map</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="contour_lines.htm">Contour&nbsp;Lines</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="display_settings.htm">Display&nbsp;Settings</a>&nbsp;]</nobr></p>
+<p align="center">&nbsp;</p>
+
+<!--mstheme--></font></td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><!--msnavigation--><td valign="top"><!--mstheme--><font face="Times New Roman">
+<h2><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339999">Height Plane<!--mstheme--></font></h2>
+<p class="MsoBodyText">The height plane is the surface displayed in the <a href="../screen_elements.htm">Surface View Window</a>.
+Choose <b style="mso-bidi-font-weight:normal">Height
+Plane</b> from the <b style="mso-bidi-font-weight:normal"><u>S</u>etup</b> 
+menu, and choose any available plane from the list:</p>
+<p class="MsoBodyText"><img border="0" src="../images/height_plane.gif" width="296" height="97"></p>
+<p class="MsoBodyText">You cannot choose &quot;none&quot; as the height field -
+if you do, Topography-Forward will be automatically selected. If you wish to
+display a completely flat surface, set the <b>Z scale</b> to zero, as described
+in the next section.</p>
+<p class="MsoBodyText">When you open the NanoManipulator, it creates a plane
+called &quot;Empty-HeightPlane&quot;. This plane remains available if you open a
+static data file, but contains no data. It will be removed if you open an SPM
+connection or stream file.&nbsp;</p>
+<p class="MsoBodyText">When you are connected to an SPM, and therefore in all
+stream files, the plane named Topography-Forward is forced to exist. However, if
+you use the <a href="datasets.htm">Datasets</a> dialog or the ThermoMicroscopes
+software to change the scan data sets so the SPM is not collecting
+Topography-Forward, this plane of data will be &quot;empty&quot;; all it's data
+values will be zero. Use the Height Plane control to choose another scan data
+set.</p>
+<p class="MsoBodyText">Note: if you are <a href="../file_menu/open_spm_connection.htm">connected
+to an SPM</a> and you wish to use <a href="../phantom_modes.htm#Touch">Touch</a>
+to modify the surface, the Height Plane must be the same as one of the <a href="datasets.htm">Datasets</a>
+collected during a modification. Otherwise, you won't be able to feel the sample
+surface.&nbsp;</p>
+<h2><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339999">Z Scale<!--mstheme--></font></h2>
+<p class="MsoBodyText">The z-scale controls the ratio of the image’s height to
+its length and width.<span style="mso-spacerun: yes">&nbsp; </span>Because it
+can exaggerate height, adjusting the z-scale can make certain features more
+obvious.&nbsp;</p>
+<p class="MsoBodyText">To modify the z-scale, choose <b style="mso-bidi-font-weight:normal">Height
+Plane</b> from the <b style="mso-bidi-font-weight:normal"><u>S</u>etup</b> menu.
+Type a new scale factor in the <b>Z scale</b> entry box. Because the surface
+will often move out of view , the surface will <b><a href="../phantom_modes.htm#Center">center</a></b> when the z-scale is
+changed. </p>
+<p class="MsoBodyText">Be careful using this tool when you are studying the
+shape of features on your sample. Because this is a non-uniform scaling, the
+exaggeration of the height of features on the surface can be misleading. </p>
+&nbsp;<!--mstheme--></font><!--msnavigation--></td></tr><!--msnavigation--></table></body>
+
+</html>

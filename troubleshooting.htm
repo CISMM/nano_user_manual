@@ -1,0 +1,48 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Troubleshooting</title>
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta name="Microsoft Theme" content="user-man 010, default">
+<meta name="Microsoft Border" content="t, default">
+</head>
+
+<body bgcolor="#FFFFCC" text="#000000" link="#006600" vlink="#993333" alink="#CC6600"><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td><!--mstheme--><font face="Times New Roman">
+
+<p align="center"><font size="6"><strong><img src="_derived/troubleshooting.htm_cmp_user-man010_bnr.gif" width="600" height="60" border="0" alt="Troubleshooting"></strong></font><br>
+<nobr>[&nbsp;<a href="index.htm">Home</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="introduction.htm">Introduction</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="feature_list.html">Features</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="main_window.htm">Main&nbsp;Window</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="file_menu/file_menu.htm">File&nbsp;Menu</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="setup_menu/setup_menu.htm">Setup&nbsp;Menu</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="tip_control_menu/tip_control_menu.htm">Tip&nbsp;Control&nbsp;Menu</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="analysis_menu/analysis_menu.htm">Analysis&nbsp;Menu</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="tools_menu/tools_menu.htm">Tools&nbsp;Menu</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="screen_elements.htm">Surface&nbsp;View&nbsp;Window</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="phantom_modes.htm">Phantom&nbsp;Modes</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="magellan_controls.htm">Magellan&nbsp;Controls</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="widgets.htm">Widgets</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="tutorials.htm">Tutorials</a>&nbsp;]</nobr> <nobr>[&nbsp;Troubleshooting&nbsp;]</nobr> <nobr>[&nbsp;<a href="nmviewer.htm">NMViewer</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="glossary.htm">Glossary</a>&nbsp;]</nobr></p>
+<p align="center">&nbsp;</p>
+
+<!--mstheme--></font></td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><!--msnavigation--><td valign="top"><!--mstheme--><font face="Times New Roman">
+<h2><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339999">Phantom and Magellan<!--mstheme--></font></h2>
+<p>If the Phantom or Magellan breaks, it is possible to prevent the
+NanoManipulator from trying to connect to them on startup. This will get rid of
+delays and error dialogs associated with not being able to connect to the broken
+equipment. See the <a href="environment.htm">Environment</a> section for
+instructions on changing the environment variables which will enable or disable
+the Phantom and Magellan.</p>
+<p>If the Phantom is not attached, you can still move the hand icon using <a href="mouse_phantom.htm">Mouse Phantom</a>
+emulation. </p>
+<h2><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339999">Slow response during replay<!--mstheme--></font></h2>
+<p>There are some instances where replaying a stream file can slow down
+considerably, causing the NanoManipulator to make large jumps in time,
+displaying changes infrequently. There are two things which can greatly reduced
+this problem. First, reduce the surface detail displayed during fast replays, by
+adjusting the <a href="main_window.htm#Immediate controls">Speed/Detail control</a>.
+Second, reduce the number of points graphed by the <a href="tools_menu/stripchart.htm">Stripchart</a>
+during modifications, by clicking the <b>Axis Config</b> button and reducing the
+<b>Max pts.</b> number. </p>
+<h2><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339999">ThermoMicroscopes SPMLab freezes <!--mstheme--></font></h2>
+<p>We have seen a rare problem which can cause the ThermoMicroscopes SPMLab
+application to stop responding. If you connect the NanoManipulator to and SPM,
+then disconnect by choosing <b>File .. Close</b> or opening a stream file,
+SPMLab may stop responding. If this happens, quit the NanoManipulator. SPMLab
+should start responding normally, and it has done so the few times we have seen
+this problem. If it does not, you may have to withdraw the scanning tip manually
+and force SPMLab to quit.&nbsp; </p>
+&nbsp;<!--mstheme--></font><!--msnavigation--></td></tr><!--msnavigation--></table></body>
+
+</html>

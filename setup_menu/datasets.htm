@@ -1,0 +1,45 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Datasets</title>
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta name="Microsoft Theme" content="user-man 010, default">
+<meta name="Microsoft Border" content="t, default">
+</head>
+
+<body bgcolor="#FFFFCC" text="#000000" link="#006600" vlink="#993333" alink="#CC6600"><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td><!--mstheme--><font face="Times New Roman">
+
+<p align="center"><font size="6"><strong><img src="_derived/datasets.htm_cmp_user-man010_bnr.gif" width="600" height="60" border="0" alt="Datasets"></strong></font><br>
+<nobr>[&nbsp;<a href="../index.htm">Home</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="setup_menu.htm">Up</a>&nbsp;]</nobr> <nobr>[&nbsp;Datasets&nbsp;]</nobr> <nobr>[&nbsp;<a href="height_plane.htm">Height&nbsp;Plane</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="color_map.htm">Color&nbsp;Map</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="contour_lines.htm">Contour&nbsp;Lines</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="display_settings.htm">Display&nbsp;Settings</a>&nbsp;]</nobr></p>
+<p align="center">&nbsp;</p>
+
+<!--mstheme--></font></td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><!--msnavigation--><td valign="top"><!--mstheme--><font face="Times New Roman"><p>This dialog allows you to choose what data to collect with your SPM.
+Choose <b>Setup .. Datasets</b> from the menu to open this dialog: </p>
+<p><img border="0" src="../images/datasets_setup.gif" width="568" height="486"> </p>
+<p>The
+first column controls what scan data is collected. The second column controls
+what data is collected during a modification. The third column controls what
+data is collected when a force curve is taken. </p>
+<p>If a data set is chosen which is not possible to collect at the same time as
+the other data sets being collected, the check button will turn red when you
+choose it, and then turn back off after a moment.&nbsp; </p>
+<p>Note: This dialog is not available when you are viewing stream files or
+static data files.&nbsp; </p>
+<h3><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339966">Number of Samples<!--mstheme--></font></h3>
+<p>The modification data sets have an additional column of numbers in entry
+widgets, which allow you to set how many point samples are averaged by the SPM
+software before the data is returned to the NanoManipulator. Averaging is used
+to reduce the amount of noise in the measurement, but it increases the time
+required to collect data at each location. Typical values for most data sets are
+10 samples averaged, but the default for Topography is 90 samples, because it
+benefits from more averaging. </p>
+<p>Reducing the number of samples and the number of different types of data
+collected will increase the speed with which the tip can follow the Phantom's
+movements. If you are doing a delicate modification with the <a href="../tip_control_menu/modify_controls.html#Tools">freehand
+tool</a>, this will improve the touch response during modification. </p>
+&nbsp;<!--mstheme--></font><!--msnavigation--></td></tr><!--msnavigation--></table></body>
+
+</html>

@@ -1,0 +1,74 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Calculate Data Planes</title>
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta name="Microsoft Theme" content="user-man 010, default">
+<meta name="Microsoft Border" content="t, default">
+</head>
+
+<body bgcolor="#FFFFCC" text="#000000" link="#006600" vlink="#993333" alink="#CC6600"><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td><!--mstheme--><font face="Times New Roman">
+
+<p align="center"><font size="6"><strong><img src="_derived/calculate_data_planes.htm_cmp_user-man010_bnr.gif" width="600" height="60" border="0" alt="Calculate Data Planes"></strong></font><br>
+<nobr>[&nbsp;<a href="../index.htm">Home</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="analysis_menu.htm">Up</a>&nbsp;]</nobr> <nobr>[&nbsp;Calculate&nbsp;Data&nbsp;Planes&nbsp;]</nobr> <nobr>[&nbsp;<a href="rulergrid.htm">Rulergrid</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="measure_lines.htm">Measure&nbsp;Lines</a>&nbsp;]</nobr></p>
+<p align="center">&nbsp;</p>
+
+<!--mstheme--></font></td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><!--msnavigation--><td valign="top"><!--mstheme--><font face="Times New Roman">
+<h2><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339999">Flattened Plane<!--mstheme--></font></h2>
+<p>Flattening the height plane eliminates the slope in the surface.<span style="mso-spacerun: yes">&nbsp;
+</span>(For example, if the original sample was placed at an angle,
+so that it was higher at one end than at the other, then flattening the height
+plane tries to “undo” this positioning – causing the height plane to again
+be level, or “flat.”)</p>
+<p>The flatten plane tool uses the position of the <a href="measure_lines.htm">Measure Lines</a>
+to determine the three points to use as a plane. Move the three measure lines so
+they intersect the surface on the substrate - and not on objects or debris that
+is higher than the substrate.&nbsp;</p>
+<p>Choose <b>Analysis .. Calculate Data Planes</b> to bring up this dialog:</p>
+<p><img border="0" src="../images/calculate_data_planes.gif" width="323" height="394"></p>
+<p><span style="font-size: 12.0pt; mso-bidi-font-size: 10.0pt; mso-fareast-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">Click
+in the <b style="mso-bidi-font-weight:normal">Flatten plane</b> box and type the
+name of your new, “flattened” data. When you hit Enter, the new flatten
+plane will be created. It can be used for a color map or contour line
+display.&nbsp;</span><p><span style="font-size: 12.0pt; mso-bidi-font-size: 10.0pt; mso-fareast-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">When
+connected to an SPM, it is not recommended that you use a flatten plane (or any
+calculated plane) as the </span><a href="../setup_menu/height_plane.htm">Height Plane</a>,
+because you will not be able to touch the surface.<h2><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339999">Line-by-line Flattened
+Plane<!--mstheme--></font></h2>
+<p>This method of flattening data eliminates differences between scan-lines.
+Occasionally the scan-lines from the SPM will be offset relative to each other.
+Line-by-line flattening applies an offset to every scan-line except the first so
+that its average data value is the same as that of the first scan line.&nbsp;<p>Click
+in the <b>Line-by-line flatten plane</b> box and type the name of the new plane
+to be created. <span style="font-size: 12.0pt; mso-bidi-font-size: 10.0pt; mso-fareast-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"> When you hit Enter, the new
+</span>line-by-line <span style="font-size: 12.0pt; mso-bidi-font-size: 10.0pt; mso-fareast-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"> flatten
+plane will be created. It can be used for a color map or contour line display.
+You can also use the </span>line-by-line <span style="font-size: 12.0pt; mso-bidi-font-size: 10.0pt; mso-fareast-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"> flatten
+plane as the </span><a href="../setup_menu/height_plane.htm">Height Plane</a>
+for presentation or analysis<span style="font-size: 12.0pt; mso-bidi-font-size: 10.0pt; mso-fareast-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">,
+but don't use </span>it as the height plane when connected to an SPM, or you
+won't be able to touch the surface. <h2><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339999">Sum Plane<!--mstheme--></font></h2>
+<p>These controls allow you to calculate data in a new plane based on the data
+in two other planes. This can be useful when comparing two planes of data, or
+when analyzing error signals. Each data point in the sum plane is calculated
+like this<p>sum plane point = (first plane point) + ((scale factor) * (second
+plane point))<p>Choose the first and second planes from their pop-up lists, and
+specify a scale factor. The default scale of -1 will simply subtract the data in
+the second plane from the data in the first plane. Finally, type in a name for
+the new sum plane and hit Enter. The new plane will be created with the
+calculated data. <h2><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339999">Dynamic Data<!--mstheme--></font></h2>
+<p>All these methods for creating a calculated plane are dynamic - they create a
+plane which is linked to its source plane(s), so any new data that comes into
+the source plane(s) from a stream file or a live connection to an SPM will cause
+the calculated plane to update as well.
+<h2><!--mstheme--><font face="Century Gothic, Arial, Helvetica" color="#339999">Calculated Planes and Performance<!--mstheme--></font></h2>
+<p>Each calculated plane takes some time to update as new data comes from an SPM
+or from a stream file. You may notice a performance slow-down if you create
+several calculated planes. If this becomes unacceptable, choose <b>File .. <a href="../file_menu/close.htm">Close</a></b>.
+This will save your stream file if you are connected to an SPM, and clear out
+all the calculated planes you have created. Then re-open the SPM connection with
+a new stream file, or re-open the stream file you were viewing. <!--mstheme--></font><!--msnavigation--></td></tr><!--msnavigation--></table></body>
+
+</html>
